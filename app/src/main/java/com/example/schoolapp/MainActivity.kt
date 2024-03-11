@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
         val button3: Button = findViewById(R.id.button3)
 
         button.setOnClickListener {
-            textView.text = "1"
+            textView.text = "11"
         }
         button2.setOnClickListener {
             textView.text = "2"
