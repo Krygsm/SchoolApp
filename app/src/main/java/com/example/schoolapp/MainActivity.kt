@@ -1,6 +1,8 @@
 package com.example.schoolapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,32 +17,14 @@ import com.example.schoolapp.ui.theme.SchoolAppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            SchoolAppTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Ziomal")
-                }
-            }
+        setContentView(R.layout.layout)
+
+        val textView: TextView = findViewById(R.id.textView)
+
+        val button: Button = findViewById(R.id.button)
+
+        button.setOnClickListener {
+            textView.text = "Kliknales"
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SchoolAppTheme {
-        Greeting("Android")
     }
 }
