@@ -1,34 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#4F7491"
+        android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="2" />
+        <Button
+            android:id="@+id/C"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="@string/c" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="3" />
+        <Button
+            android:id="@+id/Modulo"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="@string/Percent" />
+
+        <Button
+            android:id="@+id/PlusMinus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="@string/plusdivide" />
+
+        <Button
+            android:id="@+id/Subdivide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:text="@string/subd" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <Button
+            android:id="@+id/One"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/Two"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/Three"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/Multiply"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/mult" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <Button
+            android:id="@+id/Four"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/Five"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/Six"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/Add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/add" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <Button
+            android:id="@+id/Seven"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/Eight"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/Nine"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/Divide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/minus" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <Button
+            android:id="@+id/Zero"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/_0" />
+
+        <Button
+            android:id="@+id/button30"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/sd" />
+
+        <Button
+            android:id="@+id/Equals"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:onClick="appendText"
+            android:text="@string/equals" />
+    </TableRow>
 
 </LinearLayout>
