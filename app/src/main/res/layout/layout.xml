@@ -172,12 +172,12 @@
             android:text="@string/_0" />
 
         <Button
-            android:id="@+id/button30"
+            android:id="@+id/Dot"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="105dp"
             android:layout_height="match_parent"
             android:onClick="appendText"
-            android:text="@string/sd" />
+            android:text="." />
 
         <Button
             android:id="@+id/Equals"
