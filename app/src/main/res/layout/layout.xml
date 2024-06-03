@@ -166,23 +166,15 @@
         <Button
             android:id="@+id/Zero"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="210dp"
+            android:layout_width="205dp"
             android:layout_height="match_parent"
             android:onClick="appendText"
             android:text="@string/_0" />
 
         <Button
-            android:id="@+id/Dot"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="105dp"
-            android:layout_height="match_parent"
-            android:onClick="appendText"
-            android:text="." />
-
-        <Button
             android:id="@+id/Equals"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="107dp"
+            android:layout_width="205dp"
             android:layout_height="match_parent"
             android:onClick="appendText"
             android:text="@string/equals" />
